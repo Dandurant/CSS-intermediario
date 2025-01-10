@@ -1,0 +1,70 @@
+/* Seletores de css */
+
+* {
+
+   /*É um seletor universal. Aplica-se em todos os elementos do documento*/
+
+   border: 1px solid red;
+
+
+}
+
+h1, h2, h3 {
+
+   color: aqua;
+    /*São seletores de texto, selecionando os elementos por seu tipo*/
+
+}
+
+.seletordeclasse{
+
+   /* O .(nome) é um seletor de classe, seleciona elementos cujo atributo class tenha o valor especificado (nome)*/
+
+   color: green;
+
+}
+
+p.seletordeclasse{ 
+
+   color:blue;
+
+}
+
+#seletordeid {
+
+   color: orange;
+
+   /* Seleciona um elemento cujo atributo id tenha valor especificado*/
+}
+
+li>a{
+
+   /* Seleciona um elemento que é filho DIRETO de outro */
+
+   /* No caso desse código, o que está sendo selecionado é um link (a) filho de li */
+
+   color: pink;
+
+}
+
+div a {
+
+   color: blueviolet;
+
+   /*Seleciona o elemento especificado que é descendente de outro. Não é filho, é descendente. Po*/
+
+}
+
+h1+p{
+
+   /* Seleciona o elemento especificado que é adjacente do outro. */
+   color: yellowgreen;
+
+}
+
+h1~p{
+
+   color: rgb(243, 3, 252);
+   /* Seleciona o elemento que é irmaõ de outro, embora não precise ser o elemento diretamente precedente */
+
+}
