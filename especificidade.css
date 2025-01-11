@@ -1,0 +1,57 @@
+/* Especificidades 
+
+Sua importãncia se dá em razão de sua função de aplicação de prioridade de regras. 
+
+Por exemplo, seletores. Os seletores tem preferências que definem quais regras são aplicadas primeiro. A exemplo:
+
+p{ color: red} p { color: blue}, o color blue será aplicado por ultimo e, portanto, é o que terá prioridade. 
+
+Essa lógica se aplica também a classes e id's. 
+
+A exceção é se você usar o !important
+*/
+
+*{/*4*/
+
+    background-color: aqua;
+
+}
+
+h2{ /*3*/
+    
+    /* O específico sobrepõe o geral */
+    background-color: red;
+
+}
+
+h2.verde{ /*2*/
+
+    background-color: green;
+
+}
+
+h2#marelo{ /*1*/
+
+    /* Id é mais específico que class, tem prioridade */    
+    background-color: yellow;
+
+}
+
+.paragrafo{
+
+    color: red;
+
+}
+
+.paragrafo{
+
+    color: blue;
+
+}
+
+.paragrafo{
+
+    
+    color: green !important;
+
+}

@@ -1,0 +1,17 @@
+/* Herança e especificidade */
+*{
+
+    border: 10px solid pink;
+
+}
+
+body{
+
+    color: red;
+    font-size: 16px;
+    border: 5px solid purple;
+    background-color: aquamarine;
+    /* Quando se aplica uma formatação em uma estrutura pai, seus filhos herdam suas características. Por isso, aconselha-se formatações genéricas para estruturas 'pai' */
+
+}
+

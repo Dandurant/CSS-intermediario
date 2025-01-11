@@ -1,0 +1,42 @@
+ul{
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+ul a{
+
+    width: 200px; /* 400 é o tamanho exato da imagem que usaremos no exemplo. Deixamos então um pouco menor para cortar um pedaço da imagem.  */
+    height: 40px;
+    display: block; /*Elementos de lista são elementos inline, então o uso de widht não dá muito certo sem a alteração do display para block */
+    background: #f7b600 url(imagens/menu.png) no-repeat left;/* É recomendado colocar uma cor de fundo caso a imagen não carregue */
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px; /* Controla a altura da linha em que está o texto */
+
+}
+
+
+a:hover {/* se após o hover colocarmos: , .selecionado a { Se aplica a formatação abaixo quando houver um class selecionado seguido de um link (a)*/
+
+    background-position: right bottom;
+    background-color: #f99200; /* É recomendado colocar uma cor de fundo caso a imagen não carregue */
+    color: #fff; /* É recomendado colocar uma cor de fundo caso a imagen não carregue */
+
+}
+
+#corpo1 .item1 a, 
+#corpo2 .item2 a, 
+#corpo3 .item3 a { /* Dá pra usar id's e classes várias vezes pra especificar para onde está indo a formatação */
+
+    background-position: right bottom;
+    background-color: #f99200; /* É recomendado colocar uma cor de fundo caso a imagen não carregue */
+    color: #fff; /* É recomendado colocar uma cor de fundo caso a imagen não carregue */
+
+}
+
+
+/* A estratégia é criar várias páginas com id's e nomes diferentes */
