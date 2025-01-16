@@ -1,4 +1,4 @@
-/* The fixed layout is too know as liquid layot, in order of its adaptation towards the page itself. */
+/* The fixed layout has a property where it cannot be changed, no matter the size of the page. The fixed size of our structures was chosen in the div conteiner in 720px .*/ 
 
 body{
 
@@ -9,7 +9,7 @@ background: #f2f2f2;
 
 #conteiner{
 
-    width: 720px;
+    width: 720px; /* Div's size */
     margin: 0 auto;
     background: #fff;
 
