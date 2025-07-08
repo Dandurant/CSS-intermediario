@@ -1,0 +1,117 @@
+/* The liquid layout has it name because of its adaptation property. It uses "%", literaly percentage instead of pixels to it's size. 
+
+It is important to say that all the property should be adjusted with the way the sizes are being aplied. If pixels is used (solid or fixed), carefull using percentage (float) 
+
+Finaly, the math we need to do to know the percentage of the sizes are being based on 720px, witch was conteiner's div size. 
+
+*/
+
+/* On this config, we will add the liquid status to the images that we insert on our site, but keeping the previous configuration on our css*/
+
+/* Adding one more configuration to our css class, we are learning to creat a false colum. It is said 'false', because it is not really a colum created on css. It is a image. */
+
+    body{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f2f2f2;
+    
+    }
+    
+    #conteiner{
+    
+        width: 960px; /* Originaly, we were using the percentage configuration, but if we want to use the 'false colum' technique, we need to keep the width on a defined size.      */
+        margin: 0 auto;
+        background: #fff url(imagens/coluna.png) repeat-y left top;
+        min-width: 720px; /* This command defines the minimum width, witch disables some liquid properties. */
+        max-width: 1000px; /* Same as min-width, but maximum. */
+    
+    }
+    
+    #marca{
+    
+        width: 100%; /* 100% is default size. */
+        height: 200px;
+        background: #225992 url(imagens/cabecalho2.jpg) no-repeat center;
+        text-align: center;
+        line-height: 200px;
+    
+    }
+    
+    #conteudo{
+    
+        width: 74%; /*Was 520px*/
+        float:right;
+    
+    }
+    
+    #navegacao{
+    
+        width: 20%; /* Was 180px */
+        float:left; /*Definido para que a "navegação" ficasse à esquerda, para aparecer antes de 'conteúdo'.*/
+        padding-top: 20px;
+        padding-bottom: 20px;
+        /*background: #d1d1d1;*/ /* We took off the background configuration because we wanted to creat a contrat on our colors */
+    
+    }
+    
+    #navegacao ul{
+    
+        list-style:none;
+    
+    }
+    
+    #navegacao li a{
+    
+        text-decoration: none;
+    
+    }
+    
+    #conteudo-principal{
+    
+        width: 60%; /* It was 320px */
+        float:left;
+    
+    }
+
+    /*
+    #imagem{
+
+        width: 90%;
+        overflow: hidden ;
+
+    } */
+
+    img.img-noticia{
+
+        width: 96%; /* With the % scale, you garantee that the imagem will adjust with the page's zoom */
+        padding: 2%;
+        max-width: 600px;
+
+    }
+
+    #conteudo-secundario{
+    
+        width: 30%; /* It was 180px */
+        float: right;
+        position: relative;
+        bottom: 550px;
+    
+    }
+    
+    #conteudo-secundario h1,
+    #conteudo-secundario h2,
+    #conteudo-secundario h3,
+    #conteudo-secundario p{
+    
+        padding-left: 20p   x;
+        padding-right: 20px;
+    
+    }
+    
+    #rodape{
+    
+        clear: both;
+        background: #c4c4c4;
+        padding: 5px;
+    
+    }
