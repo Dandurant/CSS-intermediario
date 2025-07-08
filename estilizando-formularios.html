@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="estilizando-formularios.css">
+
+
+    <title>Estilizando Formulários</title>
+
+</head>
+
+<body>
+
+    <h2>Estilizando formulários</h2>
+    
+    <form>
+    
+        <fieldset> <!--Everything that is inside our fieldset is going to be shown inside the secction of the formulary -->
+
+            <legend> Detalhes de contato </legend> <!--Creates the 'title' of our formulary.-->
+
+            <div>
+
+                <label for="nome">Nome:</label> <!-- The use of 'for' and 'id' here is to associate the elements. 'For' and 'id' need to be the same value. -->
+                <input type="text" name="nome" id="nome">
+
+            </div>
+
+            <div>
+
+                <label for="Email">E-mail:</label> <!-- The use of 'for' and 'id' here is to associate the elements. 'For' and 'id' need to be the same value. -->
+                <input type="text" name="nome" id="Email">
+
+            </div>
+
+            <div>
+
+                <label for="URL">URL:</label> <!-- The use of 'for' and 'id' here is to associate the elements. 'For' and 'id' need to be the same value. -->
+                <input type="text" name="nome" id="URL">
+
+            </div>
+        
+        </fieldset>
+
+
+        <fieldset> <!--Everything that is inside our fieldset is going to be shown inside the secction of the formulary -->
+
+            <legend> Comentários </legend> <!--Creates the 'title' of our formulary.-->
+
+            <div>
+
+                <label for="mensagem"> Mensagem </label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+
+            </div>
+        
+        </fieldset>
+
+        <fieldset> <!--Everything that is inside our fieldset is going to be shown inside the secction of the formulary -->
+
+            <legend> Lembrar de mim </legend> <!--Creates the 'title' of our formulary.-->
+
+            <div>
+
+                <label> 
+                
+                    <input class="radio" type="radio" name="lembrar" id="sim"> Sim
+                    
+                </label>
+                
+
+            </div>
+
+             <div>
+
+                <label> 
+                
+                    <input class="radio" type="radio" name="lembrar" id="nao"> Não
+                    
+                </label>
+                
+
+            </div>
+        
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
